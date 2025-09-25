@@ -229,6 +229,20 @@ console.log(findDuplicate(arr))
 // ------------------------------------------------------------------------------
 
 
+const arr = [1,1,2,2,3,5,5,4];
+
+function removeDupli(arr){
+    let newArr= [];
+    
+    for(let i=0;i<arr.length;i++){
+        if(!newArr.includes(arr[i])){
+            newArr.push(arr[i])
+        }
+    }
+    return newArr;
+}
+console.log(removeDupli(arr))
+
 //without sorting
 function findDuplicate(arr){
     let newArr=[];
